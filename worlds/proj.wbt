@@ -1,0 +1,85 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.11888025422033173 -0.5411292634783073 0.8324942074056335 5.22631499964334
+  position -8.986374244610426 10.130383700277708 8.42179439176132
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Pioneer3at {
+  translation 0.012491665082811127 -4.827486865306317e-07 0.0006563138328976592
+  rotation -0.09810948517786694 -0.9951756240201562 7.921001478144469e-05 0.02062908185863933
+  controller "my_controller"
+  extensionSlot [
+    Emitter {
+      channel 1
+    }
+    Compass {
+    }
+    GPS {
+      rotation 0.533839584418579 -0.5338363010481775 -0.6557698542865464 1.9807633342124085
+    }
+  ]
+}
+RectangleArena {
+  floorSize 10 10
+  wallHeight 0.75
+}
+WoodenBox {
+  translation -4.19 1.03 0.3
+  name "wooden box(7)"
+}
+WoodenBox {
+  translation -2.05 -0.12 0.3
+  name "wooden box(1)"
+}
+WoodenBox {
+  translation -0.48 3.1 0.3
+  name "wooden box(2)"
+}
+WoodenBox {
+  translation -2.75 3.16 0.3
+  name "wooden box(3)"
+}
+WoodenBox {
+  translation 2.04 1.03 0.3
+  name "wooden box(4)"
+}
+WoodenBox {
+  translation 1.97 -2.68 0.3
+  name "wooden box(5)"
+}
+WoodenBox {
+  translation -0.54 -2.82 0.3
+  name "wooden box(6)"
+}
+WoodenBox {
+  translation -2.88 -2.98 0.3
+  name "wooden box(8)"
+}
+RectangleArena {
+  translation -17.26 0 0
+  name "rectangle arena(1)"
+  floorSize 5 7
+  wallHeight 0.4
+}
+Pioneer3at {
+  translation -17.57 0 0
+  name "Pioneer 3-AT(1)"
+  controller "base_station_controller"
+  extensionSlot [
+    Receiver {
+      channel 1
+    }
+  ]
+}
